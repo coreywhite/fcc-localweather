@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #acf;
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .05em;
+  margin: 0;
+  padding: 0;
+}
+
+#placeholder {
+  font-size: 120px;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  overflow: hidden;
+  width: 700px;
+  margin: 0 auto;
+}
+
+#weather-wrapper,
+#icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  width: 350px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#weather-wrapper {
+  position: relative;
+  float: left;
+  text-transform: capitalize;
+  border-radius: 12px;
+}
+
+#icon-wrapper {
+  float: right;
+  color: #fff;
+  font-size: 180px;
+  line-height: 0;
+}
+
+#message {
+  text-align: center;
+  min-height: 3em;
+}
+
+#weather-wrapper .temp-unit {
+  border-bottom: 1px dashed #FF6526;
+}
+
+#weather-wrapper .temp-unit:hover {
+  color: #FF6526;
+  cursor: pointer;
+}
+
+#forecast-wrapper {
+  clear: both;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  border-top: 1px dashed #fff;
+  padding: 0 50px;
+}
+
+.forecast-day {
+  width: 100px;
+  margin: 0;
+  padding: 10px;
+  float: left;
+}
+
+.forecast-icon .wi {
+  font-size: 40px;
+  line-height: .5;
+}
+
+.forecast-day .high {
+  color: rgb(255, 101, 38);
+  font-weight: bold;
+}
+
+.forecast-day .low {
+  color: rgb(0, 12, 66)
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    max-width: 90%;
+  }
+  body {
+    font-size: 18px;
+  }
+  #forecast-wrapper {
+    padding: 0;
+  }
+  #weather-wrapper,
+  #icon-wrapper {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  #icon-wrapper {
+    font-size: 80px;
+    margin-bottom: 25px;
+  }
+  .forecast-day {
+    width: 33%;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    font-size: 16px;
+  }
+  .forecast-day {
+    width: 49%;
+    padding: 5px;
+  }
+}
