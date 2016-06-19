@@ -1,4 +1,4 @@
-# fcc-tictactoe
+# fcc-localweather
 Free Code Camp - Intermediate Front End Project - Local Weather
 
 Made for Free Code Camp.
